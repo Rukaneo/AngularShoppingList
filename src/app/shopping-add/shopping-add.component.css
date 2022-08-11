@@ -1,0 +1,75 @@
+.shopping{
+  display: flex;
+  margin: 8% auto;
+  border: 1px solid rgb(198, 198, 198);
+  width: fit-content;
+  border-radius: .4rem;
+}
+
+.shop-details{
+  padding-top: 13rem;
+  display: flex;
+  justify-content: center
+}
+
+.shop-details .heading{
+  color: white;
+  text-align: center;
+}
+
+
+
+.shop-image{
+  background-image: radial-gradient(circle at 58% 50%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 60%,transparent 60%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 36% 79%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 49%,transparent 49%, transparent 99%,transparent 99%, transparent 100%),radial-gradient(circle at 48% 23%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 50%,transparent 50%, transparent 87%,transparent 87%, transparent 100%),radial-gradient(circle at 55% 69%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 3%,transparent 3%, transparent 19%,transparent 19%, transparent 100%),radial-gradient(circle at 38% 69%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 15%,transparent 15%, transparent 33%,transparent 33%, transparent 100%),linear-gradient(45deg, rgb(14, 124, 138),rgb(44, 254, 203));
+  height: 32rem;
+  width: 25rem;
+  border-radius: .4rem 0rem .0rem .4rem
+}
+
+
+.shopping-form{
+  margin-left: 2rem;
+width: 22rem;
+
+}
+
+.shopping-form h1{
+  padding-top: 1rem;
+  text-align: center;
+  color:  teal
+
+}
+.shopping-form label{
+  display: block;
+  color: #777; ;
+  margin-bottom: .2rem;
+}
+
+.shopping-form select{
+  padding: 15px;
+  border: 1px solid rgb(198, 198, 198);
+  width: 19rem;
+  border-radius: .2rem;
+  margin-bottom: .8rem;
+
+
+}
+.shopping-form input{
+  border: 1px solid rgb(198, 198, 198);
+  padding: 15px;
+  width: 17rem;
+  border-radius: .2rem;
+  margin-bottom: .8rem;
+
+}
+
+.shopping-form button{
+  margin-top: 1.1rem;
+  display: block;
+  background-color: teal;
+  border: none;
+  padding: 15px;
+  color: white;
+  width: 19rem;
+  border-radius: .2rem;
+}

@@ -1,0 +1,62 @@
+
+.body {
+  background: linear-gradient(#0284774f, #fff, #0284774f);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.main-container {
+  /* width: 25%; */
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 0.1rem #000;
+
+}
+
+.main-header {
+  background: #028476;
+  color: #fff;
+  position: relative;
+  padding: 5px 0;
+
+}
+
+.main-header h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.add-btn {
+  background: crimson;
+  position: absolute;
+  border-radius: 50%;
+  padding: 0 7px;
+  color: #fff;
+  font-size: 25px;
+  border: none;
+  box-shadow: 0 0 0.4rem #fff;
+  top: 7px;
+  right: 7px;
+}
+
+.del-btn {
+  background: #000;
+  color: #fff;
+  border-radius:10px;
+  padding: 5px;
+  width: 50px;
+}
+
+.list-item {
+  padding: 0 2rem 2rem 2rem;
+
+
+}
+
+.grid {
+display: grid;
+grid-template-columns: auto auto auto;
+/* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+

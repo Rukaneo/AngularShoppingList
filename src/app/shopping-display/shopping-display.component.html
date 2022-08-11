@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="body">
+
+  <!-- <div>
+    <button type="submit" class="add-btn">+</button>
+  </div> -->
+  <div class="main-container" *ngFor="let item of Items" class="list-item">
+
+      <div class="main-header">
+          <h1>Category: {{item.category}}</h1>
+      </div>
+
+      <div class="grid">
+      <ol >
+        <li>
+          <p>Item Name: {{item.name}}</p>
+          <p>Quantity: {{item.quantity}}</p>
+          <p>Price: {{item.price}}</p>
+          <div>
+              <button class="del-btn">X</button>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </div>
+
+
+      <!-- Colletions
+      - Item
+         - Category
+         - Price
+         - Amount
+
+      - Category
+         - Name -->
+
+
+</body>
+</html>

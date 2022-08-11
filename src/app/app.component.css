@@ -1,0 +1,25 @@
+.navbar {
+  display:inline-block;
+  padding: 20px;
+  height: 100px;
+ width: 100%;
+ background-color: #028476;
+ color: aquamarine;
+
+
+ }
+
+ ul {
+   list-style: none;
+
+ }
+ li:hover{
+ color:whitesmoke;
+ font-size: 20px;
+ transition: .1s;
+ cursor: pointer;
+ }
+
+ h2 {
+   color: whitesmoke;
+ }
