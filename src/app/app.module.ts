@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ShoppingAddComponent } from './shopping-add/shopping-add.component';
 import { ShoppingDisplayComponent } from './shopping-display/shopping-display.component';
 import { ShoppingListServiceService } from './shopping-list-service.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ShoppingListServiceService } from './shopping-list-service.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [ShoppingListServiceService],
   bootstrap: [AppComponent]

@@ -10,24 +10,27 @@
 
   </div>
   <div class="shopping-form">
-    <form action="">
+    <form (submit)="onSubmit()" [formGroup]="addList" action="">
       <h1>Add New Item</h1>
       <label for="">Item Name</label>
-      <input type="text" name="name">
+      <input type="text" name="item_name" formControlName="item_name">
 
       <label for="">Category</label>
-      <select name="" id="">
-        <option value=""></option>
+      <select name="" id="" formControlName="category">
+        <option value="Fruit">Fruit</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Vegetable">Vegetable</option>
+        <option value="Staple">Staple</option>
       </select>
 
       <label for="">Price</label>
-      <input type="number" name="price">
+      <input type="number" formControlName="price" name="price">
 
       <label for="">Quantity</label>
-      <input type="number" name="quantity">
+      <input type="number" formControlName="quantity" name="quantity">
 
 
-      <button> Add Item</button>
+      <button type="submit"  > Add Item</button>
     </form>
   </div>
 </div>
