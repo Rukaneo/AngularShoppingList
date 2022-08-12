@@ -9,12 +9,14 @@ import { ShoppingDisplayComponent } from './shopping-display/shopping-display.co
 import { ShoppingListServiceService } from './shopping-list-service.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShoppingAddComponent,
-    ShoppingDisplayComponent
+    ShoppingDisplayComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,

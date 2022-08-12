@@ -16,7 +16,9 @@
           <p>Quantity: {{item.quantity}}</p>
           <p>Price: {{item.price}}</p>
           <div>
-            <button class="del-btn">X</button>
+            <button class="del-btn" (click)="delItem(item)">X</button>
+            <a href="edit/{{item._id}}"><button class="update" >Update </button></a>
+
           </div>
         </li>
       </ol>

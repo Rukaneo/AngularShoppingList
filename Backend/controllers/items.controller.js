@@ -14,6 +14,7 @@ exports.getAllItems = async (req, res) => {
 	}
 }
 
+
 /**
  * ### Description
  * Creating an item
@@ -40,3 +41,45 @@ exports.deleteItemsById = async (req, res) => {
 		JSONResponse.error(res, 'Failure handling item model.', error, 500)
 	}
 }
+
+exports.getItemById = async (req, res) => {
+  try {
+    const item = await Items.find({ _id: req.params.id });
+
+    JSONResponse.success(res, 'Success.', {data: {item}}, 200)
+  } catch (error) {
+    // res.status(404).json({
+    //   status: "fail to find category",
+    //   message: err
+    // })
+    JSONResponse.error(res, 'Failure handling Category Model', error, 500)
+  }
+}
+
+//Edit Item
+exports.updateItem = async (req, res) => {
+  //
+  try {
+    const editItem = await Items.findOneAndUpdate({_id: req.params.id}, req.body)
+
+
+ JSONResponse.success(res, 'Success.', {data: {editItem, new: req.body}}, 200)
+  } catch (error) {
+    JSONResponse.error(res, 'Failure handling Category Model', error, 500)
+  }
+};
+
+exports.getItemsByCategory = async (req, res) => {
+  try {
+    const item = await Items.find({ category: req.params.category });
+
+    JSONResponse.success(res, 'Success.', {data: {item}}, 200)
+  } catch (error) {
+    // res.status(404).json({
+    //   status: "fail to find category",
+    //   message: err
+    // })
+    JSONResponse.error(res, 'Failure handling Category Model', error, 500)
+  }
+}
+
